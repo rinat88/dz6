@@ -1,21 +1,16 @@
 package com.company;
 
 public class Boss extends Players {
-    private int speed;
-    private String names;
-    public Boss (int speed , String names){
-        super(speed , names);
-        this.speed = speed;
-        this.names = names;
+    public String hit(){
+        return "Boss super Hit";
     }
 
-    @Override
-    public int getSpeed() {
-        return speed;
+    public Boss(int health , String names) {
+        super(health, names);
+
     }
 
-    @Override
-    public void setSpeed(int speed) {
-        this.speed = speed;
+    public Boss() {
+        super();
     }
 }

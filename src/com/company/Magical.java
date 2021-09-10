@@ -1,21 +1,13 @@
 package com.company;
 
 public class Magical extends Players {
-    private int speed;
-    private String names;
-    public Magical (int speed , String names){
-        super(speed , names);
-        this.speed = speed;
-        this.names = names;
+    public String hit(){
+        return "Magical Hit";
     }
 
-    @Override
-    public int getSpeed() {
-        return speed;
+    public Magical (int health , String names) {
+        super(health, names);
+
     }
 
-    @Override
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
 }
